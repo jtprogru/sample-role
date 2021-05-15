@@ -1,2 +1,4 @@
 ---
 # tasks file for sample-role
+- name: sample_role | sample ping
+  ping:

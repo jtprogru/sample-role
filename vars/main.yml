@@ -1,2 +1,6 @@
 ---
 # vars file for sample-role
+sample_role_vars_list:
+  - "one"
+  - "two"
+
