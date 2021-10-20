@@ -1,6 +1,5 @@
 ---
 # vars file for sample-role
-sample_role_vars_list:
+samplerole_sample_var:
   - "one"
   - "two"
-

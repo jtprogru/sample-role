@@ -1,3 +1,7 @@
 ####
 # {{ ansible_managed }}
 ####
+
+{% for item in samplerole_var3 %}
+srv-{{ item }}-dc01.sample.local
+{% endfor %}

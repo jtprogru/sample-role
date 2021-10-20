@@ -1,3 +1,18 @@
 ---
 # defaults file for sample-role
-# sample_var: sample_value
+samplerole_var1: foo
+samplerole_var2: 2
+samplerole_var3:
+  - "one"
+  - "two"
+  - "three"
+
+samplerole_var4:
+  id: 0
+  name: "start"
+  inner_obj:
+    - id: 1
+      name: obj1
+    - id: 2
+      name: obj2
+
