@@ -1,7 +1,8 @@
 # jtprogru.sample_role
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jtprogru/sample-role/Ansible+Molecule?label=Ansible+Molecule)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jtprogru/sample-role/Release+to+Ansible+Galaxy?label=Release+to+Ansible+Galaxy)
+[![Ansible Molecule](https://github.com/jtprogru/sample-role/actions/workflows/molecule.yml/badge.svg)](https://github.com/jtprogru/sample-role/actions/workflows/molecule.yml)
+[![Release to Ansible Galaxy](https://github.com/jtprogru/sample-role/actions/workflows/galaxy.yml/badge.svg)](https://github.com/jtprogru/sample-role/actions/workflows/galaxy.yml)
+[![TODO 2 Issue](https://github.com/jtprogru/sample-role/actions/workflows/todo.yml/badge.svg)](https://github.com/jtprogru/sample-role/actions/workflows/todo.yml)
 ![GitHub](https://img.shields.io/github/license/jtprogru/sample-role)
 [![Ansible Role](https://img.shields.io/ansible/role/54362)](https://galaxy.ansible.com/jtprogru/sample-role/)
 [![GitHub tag](https://img.shields.io/github/tag/jtprogru/sample-role.svg)](https://github.com/jtprogru/sample-role/tags)
