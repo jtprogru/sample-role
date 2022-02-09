@@ -1,7 +1,7 @@
 # jtprogru.sample_role
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jtprogru/sample-role/CI?label=CI)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jtprogru/sample-role/Release?label=Release)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jtprogru/sample-role/Ansible+Molecule?label=Ansible+Molecule)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jtprogru/sample-role/Release+to+Ansible+Galaxy?label=Release+to+Ansible+Galaxy)
 ![GitHub](https://img.shields.io/github/license/jtprogru/sample-role)
 [![Ansible Role](https://img.shields.io/ansible/role/54362)](https://galaxy.ansible.com/jtprogru/sample-role/)
 [![GitHub tag](https://img.shields.io/github/tag/jtprogru/sample-role.svg)](https://github.com/jtprogru/sample-role/tags)
@@ -32,8 +32,6 @@ Example playbook:
 ```
 
 ## Authors
-
-<!--> Кто автор/ы проекта и контакты <-->
 
 - Michael Savin
   - :octocat: [@jtprogru](https://www.github.com/jtprogru)

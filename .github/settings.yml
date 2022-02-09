@@ -1,0 +1,5 @@
+---
+repository:
+  description: Prepare your system to be managed by Ansible.
+  homepage: https://savinmi.ru/
+  topics: bootstrap, python, sudo, ansible, molecule, playbook
