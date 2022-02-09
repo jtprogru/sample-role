@@ -1,16 +1,11 @@
 ---
-name: Release
-'on':
-  push:
-    tags:
-      - '*'
+name: Release to Ansible Galaxy
 
-defaults:
-  run:
-    working-directory: 'jtprogru.sample_role'
+on:
+  release:
+    types: [created, edited, published, released]
 
 jobs:
-
   release:
     name: Release
     runs-on: ubuntu-20.04
