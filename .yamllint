@@ -4,6 +4,7 @@
 ignore: |
   .github/*
   molecule/*
+  venv/*
 
 extends: default
 

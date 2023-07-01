@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+---
+version: "3"
+
+set:
+  - pipefail
+
+silent: true
+
+tasks:
+  default:
+    desc: Show help
+    silent: true
+    cmds:
+      - task --list --color
+
+  venv:
+    desc: Create python3 virtual environment
+    preconditions:
+      - test -f $(which python3)
+    cmds:
+      - $(which python3) -m venv venv
+      - ./venv/bin/python -m pip install --upgrade pip
+
+  install:pip:
+    desc: Install python requirements
+    deps:
+      - venv
+    preconditions:
+      - test -d ./venv
+      - test -f requirements.txt
+    cmds:
+      - ./venv/bin/pip install -r requirements.txt
+
+  anslint:
+    desc: Run ansible-lint
+    deps:
+      - install:pip
+    preconditions:
+      - test -f ./venv/bin/ansible-lint
+    cmds:
+      - ./venv/bin/ansible-lint --force-color .
+
+  ymllint:
+    desc: Run yamllint
+    deps:
+      - install:pip
+    preconditions:
+      - test -f ./venv/bin/yamllint
+    cmds:
+      - ./venv/bin/yamllint --format auto --strict .
+
+  lint:
+    desc: Run all linters
+    cmds:
+      - task: ymllint
+      - task: anslint
+
+  test:
+    desc: Run test for this role
+    deps:
+      - lint
+    cmds:
+      - echo "Oooops... Need to implement!"
