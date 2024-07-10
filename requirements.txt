@@ -4,3 +4,4 @@ ansible-lint==6.17.2
 black==23.3.0
 jmespath==1.0.1
 yamllint==1.31.0
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
